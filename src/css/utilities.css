@@ -18,3 +18,9 @@
 .fw-400 {
   font-weight: 400;
 }
+
+.container {
+  width: 90%;
+  max-width: 508px;
+  margin: 0 auto;
+}
