@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-smythe: "Smythe", system-ui;
+  --font-inter: "Inter", sans-serif;
+  --font-verdana: Verdana, Geneva, Tahoma, sans-serif;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #8b8b8b;
+  --color-gray-2: #3c3c3c;
+  --color-light-gray: #dedede;
+  --color-light-gray-2: #d2d2d2;
+  --color-light-gray-3: #bbbbbb;
+  --color-dark-gray: #393333;
+  --color-green: #16db99;
+  --color-gray-3: #757575;
+}
+
+body {
+  font-family: var(--font-smythe);
+}
+
+button,
+input,
+img {
+  display: block;
+}
+
+button {
+  width: fit-content;
+}
+
+p {
+  line-height: 1.5;
+}
