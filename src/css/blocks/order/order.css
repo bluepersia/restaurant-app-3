@@ -1,0 +1,49 @@
+.order {
+  padding: 2.8em 0 3.31em;
+}
+.order__title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2.28em;
+}
+
+.order__items-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.375em;
+  padding-bottom: 2em;
+  border-bottom: solid 2px var(--color-dark-gray);
+}
+
+.order__item {
+  display: flex;
+  align-items: center;
+}
+
+.order__item-name {
+  font-size: 1.75rem;
+  margin-right: 0.46em;
+}
+
+.order__item-remove {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-verdana);
+  color: var(--color-light-gray-3);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.order__item-price {
+  margin-left: auto;
+  font-size: 1.25rem;
+}
+
+.order__total-item {
+  padding-top: 0.875em;
+}
+
+.order__complete {
+  margin-top: 3.31em;
+}
