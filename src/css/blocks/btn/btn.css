@@ -1,0 +1,18 @@
+.btn {
+  background-color: var(--color-green);
+  border: none;
+  font-family: var(--font-verdana);
+  color: var(--color-white);
+  font-weight: 700;
+  width: 100%;
+  padding: 1.125em 0;
+  border-radius: 0.18em;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  transition: filter 300ms;
+}
+
+.btn:hover,
+.btn:focus {
+  filter: brightness(75%);
+}
