@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./src/css/blocks/menu-item/menu-item.css" />
     <link rel="stylesheet" href="./src/css/blocks/btn/btn.css" />
     <link rel="stylesheet" href="./src/css/blocks/order/order.css" />
+    <link rel="stylesheet" href="./src/css/blocks/checkout/checkout.css" />
   </head>
 
   <body>
@@ -48,7 +49,7 @@
       </section>
 
       <section class="order" id="order">
-        <div class="order__inner container">
+        <div class="order__inner container" data-order-inner>
           <h2 class="order__title fw-400">Your order</h2>
 
           <div class="order__content" data-content></div>
@@ -59,6 +60,46 @@
         </div>
       </section>
     </main>
+
+    <section class="checkout" id="checkout-modal">
+      <h2 class="checkout__title">Enter card details</h2>
+
+      <form class="checkout__form" data-form>
+        <label for="full-name" class="checkout__label sr-only">Full name</label>
+        <input
+          type="text"
+          class="checkout__input"
+          name="full-name"
+          id="full-name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="card-num" class="checkout__label sr-only"
+          >Card number</label
+        >
+        <input
+          type="text"
+          class="checkout__input"
+          name="card-num"
+          id="card-num"
+          placeholder="Enter card number"
+          pattern="[0-9]+"
+          required
+        />
+        <label for="card-cvv" class="checkout__label sr-only">CVV</label>
+        <input
+          type="text"
+          class="checkout__input"
+          name="card-cvv"
+          id="card-cvv"
+          placeholder="Enter CVV"
+          required
+          pattern="[0-9]+"
+        />
+
+        <button type="submit" class="checkout__pay btn">Pay</button>
+      </form>
+    </section>
 
     <script src="./src/js/index.js" type="module"></script>
   </body>

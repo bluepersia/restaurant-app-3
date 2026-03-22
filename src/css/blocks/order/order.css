@@ -47,3 +47,14 @@
 .order__complete {
   margin-top: 3.31em;
 }
+
+.order__inner--submitted {
+  background-color: var(--color-light-green);
+  text-align: center;
+  padding: 3.25em 0;
+}
+
+.order__submitted-text {
+  color: var(--color-green-2);
+  font-size: 2rem;
+}
