@@ -21,4 +21,27 @@ function addToCart(state, id) {
   };
 }
 
-export { addToCart };
+function removeFromCart(state, id) {
+  const itemInCart = state.cart.find((item) => item.id === id);
+
+  const newItem = {
+    ...itemInCart,
+    quantity: itemInCart.quantity - 1,
+  };
+
+  if (newItem.quantity <= 0) {
+    return {
+      ...state,
+      cart: state.cart.filter((item) => item.id !== id),
+    };
+  }
+  const newCart = [...state.cart];
+
+  newCart[state.cart.indexOf(itemInCart)] = newItem;
+
+  return {
+    ...state,
+    cart: newCart,
+  };
+}
+export { addToCart, removeFromCart };
