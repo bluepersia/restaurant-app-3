@@ -1,4 +1,5 @@
 .checkout {
+  display: none;
   position: fixed;
   width: 90%;
   max-width: 524px;
