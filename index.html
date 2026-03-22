@@ -60,6 +60,38 @@
       </section>
     </main>
 
+    <section class="checkout">
+      <h2 class="checkout__title">Enter card details</h2>
+
+      <form class="checkout__form">
+        <label for="full-name" class="checkout__label sr-only">Full name</label>
+        <input
+          type="text"
+          class="checkout__input"
+          name="full-name"
+          id="full-name"
+        />
+        <label for="card-num" class="checkout__label sr-only"
+          >Card number</label
+        >
+        <input
+          type="text"
+          class="checkout__input"
+          name="card-num"
+          id="card-num"
+        />
+        <label for="card-cvv" class="checkout__label sr-only">CVV</label>
+        <input
+          type="text"
+          class="checkout__input"
+          name="card-cvv"
+          id="card-cvv"
+        />
+
+        <button type="submit" class="checkout__pay btn">Pay</button>
+      </form>
+    </section>
+
     <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
