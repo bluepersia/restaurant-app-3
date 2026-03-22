@@ -70,6 +70,8 @@
           class="checkout__input"
           name="full-name"
           id="full-name"
+          placeholder="Enter your name"
+          required
         />
         <label for="card-num" class="checkout__label sr-only"
           >Card number</label
@@ -79,6 +81,9 @@
           class="checkout__input"
           name="card-num"
           id="card-num"
+          placeholder="Enter card number"
+          pattern="[0-9]+"
+          required
         />
         <label for="card-cvv" class="checkout__label sr-only">CVV</label>
         <input
@@ -86,6 +91,9 @@
           class="checkout__input"
           name="card-cvv"
           id="card-cvv"
+          placeholder="Enter CVV"
+          required
+          pattern="[0-9]+"
         />
 
         <button type="submit" class="checkout__pay btn">Pay</button>
